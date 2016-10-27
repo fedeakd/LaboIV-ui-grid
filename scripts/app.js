@@ -6,7 +6,8 @@ angular
     'ui.grid.resizeColumns',
     'ui.grid.selection',
     'ui.grid.exporter',
-    'ui.grid.edit'
+    'ui.grid.edit',
+    'ngMap'
   ])
   .config(function ($stateProvider, $urlRouterProvider) {
 
@@ -37,5 +38,9 @@ angular
       url: '/modificar',
       templateUrl: 'views/modificar.html',
       controller:'ModificarCtrl'
+    })  .state('ConfiguradoTP', {
+      url: '/ConfiguradoTP.html',
+      templateUrl: 'views/ConfiguradoTP.html',
+      controller:'ConfiguradoTPCtrl'
     })
   });

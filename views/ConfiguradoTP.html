@@ -1,0 +1,29 @@
+
+
+<div><!-- Referencia la grilla micontrolador.js   -->
+  <div ui-grid="gridOptions" class="myGrid" style=" 
+  font-size: 12px;
+  line-height: 30px;" ></div>
+</div>
+
+
+
+<div map-lazy-load="https://maps.google.com/maps/api/js">
+  <ng-map center="{{logitud}},{{latitud}}" zoom="3">
+  	<custom-marker   ng-repeat="pin in mapa"  position="[{{pin.latitud}},{{pin.logitud}}]" draggable="true" visible="true" ng-model="position">
+	 <div style=" background-color: blue;">
+	 	{{pin.nombre}}
+		<img width="25" src="{{pin.imagen}}" alt="">
+	 </div>
+	
+  </custom-marker>
+
+</ng-map>
+</div>
+
+
+<div><!-- Referencia la grilla micontrolador.js   -->
+  <div ui-grid="gridAmigos" class="myGrid" style=" 
+  font-size: 12px;
+  line-height: 30px;" ></div>
+</div>

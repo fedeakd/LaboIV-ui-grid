@@ -3,85 +3,87 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <style type="text/css">
-          .myGrid {
-              width: 700px;
-              height: 400px;
-            }
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <style type="text/css">
+  .myGrid {
+    width: 700px;
+    height: 400px;
+  }
 
-        </style>
-        <!-- build:css(.tmp) styles/main.css -->
-        <!-- <link rel="stylesheet" href="styles/main.css"> -->
-        <!-- <link rel="stylesheet" href="styles/animate.css"> -->
-        <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="bower_components/angular-ui-grid/ui-grid.min.css">
+  </style>
+  <!-- build:css(.tmp) styles/main.css -->
+  <!-- <link rel="stylesheet" href="styles/main.css"> -->
+  <!-- <link rel="stylesheet" href="styles/animate.css"> -->
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/angular-ui-grid/ui-grid.min.css">
 
-        <!-- endbuild -->
-  </head>
-  <body ng-app="app">
+  <!-- endbuild -->
+</head>
+<body ng-app="app">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+      <![endif]-->
 
     <!--[if lt IE 9]>
       <script src="bower_components/es5-shim/es5-shim.js"></script>
       <script src="bower_components/json3/lib/json3.min.js"></script>
-    <![endif]-->
+      <![endif]-->
 
-    <!-- Add your site or application content here -->
-    <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">UI_GRID</a>
-    </div>
+      <!-- Add your site or application content here -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">UI_GRID</a>
+          </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a ui-sref="simple">Grilla Simple</a></li>
-        <li><a ui-sref="paginada">Grilla Paginada</a></li>
-        <li><a ui-sref="conf">Config Campos</a></li>
-        <li><a ui-sref="exportar">Exportar Datos</a></li>
-        <li><a ui-sref="modificar">Modificacion</a></li>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a ui-sref="simple">Grilla Simple</a></li>
+              <li><a ui-sref="paginada">Grilla Paginada</a></li>
+              <li><a ui-sref="conf">Config Campos</a></li>
+              <li><a ui-sref="exportar">Exportar Datos</a></li>
+              <li><a ui-sref="modificar">Modificacion</a></li>
+              <li><a ui-sref="ConfiguradoTP">parte 1</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <div class="container" ui-view></div>
 
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-    <div class="container" ui-view></div>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+      <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
+     ga('create', 'UA-XXXXX-X');
+     ga('send', 'pageview');
+     </script>
+     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMNL5MXSHV69hAcCJCO37a_YvSj28vmKA&callback=initMap"
+     type="text/javascript"></script>
 
 
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-ui-grid/ui-grid.min.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="bower_components/pdfmake/build/pdfmake.min.js"></script>
-    <script src="bower_components/pdfmake/build/vfs_fonts.js"></script>
-
+     <script src="bower_components/angular/angular.js"></script>
+     <script src="bower_components/angular-ui-grid/ui-grid.min.js"></script>
+     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+     <script src="bower_components/pdfmake/build/pdfmake.min.js"></script>
+     <script src="bower_components/pdfmake/build/vfs_fonts.js"></script>
+     <script src="bower_components/ngmap/build/scripts/ng-map.min.js"></script>
     <!--
     <script src="http://ui-grid.info/release/ui-gridconfin.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -95,8 +97,10 @@
     <script src="scripts/controllers/conf.js"></script>
     <script src="scripts/controllers/exportar.js"></script>
     <script src="scripts/controllers/modificar.js"></script>
+    <script src="scripts/controllers/miControlador.js"></script>
+
     <script src="scripts/services/data.js"></script>
     <script src="scripts/services/filtros.js"></script>
     <!-- endbuild -->
-</body>
-</html>
+  </body>
+  </html>
